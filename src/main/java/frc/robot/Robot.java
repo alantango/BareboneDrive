@@ -68,6 +68,8 @@ public class Robot extends TimedRobot {
    */
   @Override
   public void teleopInit() {
+    System.out.println("alalalala, fax no printer");
+    System.out.println("This is a print");
     System.out.println("test print output....");
   }
 
@@ -76,8 +78,7 @@ public class Robot extends TimedRobot {
    */
   @Override
   public void teleopPeriodic() {
-    this.motor.set(m_stick.getY()*-1);
-    
+    this.motor.set(m_stick.getTwist());
 //   m_robotDrive.arcadeDrive(m_stick.getY(), m_stick.getTwist());
 
   }
