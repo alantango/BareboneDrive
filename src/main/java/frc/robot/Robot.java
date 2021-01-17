@@ -26,6 +26,7 @@ public class Robot extends TimedRobot {
 
   private SpeedController motor = new PWMVictorSPX(0);
   private final Joystick m_stick = new Joystick(0);
+  private final Timer time = new Timer();
 
   // private final DifferentialDrive m_robotDrive
   //     = new DifferentialDrive(new PWMVictorSPX(0), new PWMVictorSPX(1));
@@ -45,8 +46,8 @@ public class Robot extends TimedRobot {
    */
   @Override
   public void autonomousInit() {
-    // m_timer.reset();
-    // m_timer.start();
+    time.reset();
+    time.start();
   }
 
   /**
