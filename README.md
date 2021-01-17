@@ -1,3 +1,3 @@
 # BareboneDrive
 
-A test project using barebone template.
+program to drive a single motor with single joystick
